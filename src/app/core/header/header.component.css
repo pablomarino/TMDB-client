@@ -1,0 +1,10 @@
+h1{
+  padding: 20px;
+  width: 100%;
+  background-color: #21272c;
+  color:white;
+  font-weight: 700;
+}
+h1 span{
+  color:hsl(320, 95%, 58%);
+}

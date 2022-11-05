@@ -1,0 +1,40 @@
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  width: 120px;
+  height: 200px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,0.2);
+}
+
+.card-img{
+  display: block;
+  width: 120px;
+  height: 150px;
+  border-radius: 5px 5px 0 0;
+  background-color: hsl(320, 95%, 90%);
+}
+
+.card-title{
+  padding: 10px;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+
+.card-year{
+
+}
+.card-favorite{
+
+}
