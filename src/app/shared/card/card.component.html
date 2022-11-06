@@ -1,6 +1,6 @@
 <div class="card">
-  <span class="material-symbols-outlined" aria-label="Add to favorites icon" (click)="null">heart_plus</span>
-  <img class="card-img" src="https://www.themoviedb.org/t/p/w220_and_h330_face/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg" alt="Movie poster">
-  <div class="card-title"><h3>Cardwall</h3></div>
-  <div class="card-year">2000</div>
+  <span class="material-symbols-outlined" aria-label="Add to favorites icon" (click)="favMovie('0',true)">heart_plus</span>
+  <img class="card-img" src={{image}} alt="Movie poster">
+  <div class="card-title"><h3>{{name}}</h3></div>
+  <div class="card-year">{{year}}</div>
 </div>

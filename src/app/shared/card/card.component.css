@@ -21,11 +21,20 @@
 }
 
 .card-title{
-  padding: 0 10px 0 10px;
+    padding: 0 10px 0 10px;
+
 }
 .card-title h3{
+  display: block;
   font-size: .9em;
   font-weight: 700;
+  width: 100px;
+  height: 20px;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
 }
 
 .card-year{

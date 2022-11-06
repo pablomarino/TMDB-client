@@ -1,7 +1,7 @@
 
 .nav{
   background: #fff;
-  padding: 10px 20px;
+  /*padding: 10px 20px;*/
   display: flex;
   justify-content: start;
   align-items: center;
@@ -12,7 +12,13 @@ a{
   color: rgb(36, 35, 35);
   font-size: 18px;
   font-weight: 400;
-  margin: 0 10px;
+  /*margin: 0 10px;*/
+  padding: 10px 20px;
+}
+
+.active{
+  color: #fff;
+  background-color: hsl(320, 95%, 58%);
 }
 
 .search{
@@ -28,7 +34,7 @@ a{
 
 .search button{
   padding: 10px;
-  margin: 0 5px;
+  margin: 0 10px;
   border: none;
   border-radius: 5px;
   outline: none;
