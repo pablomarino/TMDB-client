@@ -2,8 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
-## TMDB API
+![](https://github.com/pablomarino/tmdb-client/blob/main/src/assets/Animation.gif)
 
+
+## TMDB API
 Modify environments/environment.ts or environments/environment.prod.ts to include TMDB API Key.
 ```ts
 export const environment = {
