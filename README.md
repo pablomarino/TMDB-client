@@ -12,6 +12,27 @@ export const environment = {
 };
 ```
 
+## At a Glance
+#Components
+Header -> Title
+Nav -> Section navigation an search
+CardWall -> List of cards
+Card -> Movie card with Image, title, year and favorite button
+error -> 404 Error page
+Footer  -> Credits
+
+#Routing 
+home -> Shows a list of movies with TMDB's discovery API data.
+fav -> Shows a list of movies added to favorites.
+search/:searchterm -> Shows a search result
+* -> shows a not found error page
+
+#Data
+Both section search, favorites and home rely on cardWall component. They differ in the way they obtain the data.
+Search and favorites use tmdb.service to obtain data from TMDB API to populate the card components while favorites section uses favorite.service. 
+To store favorites the app makes use of localStorage.
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.

@@ -48,6 +48,7 @@ export class CardComponent implements OnInit {
 
     this.fav = this.favorite.isFavorite(data['id']);
 
+
     if(this.fav){
       this.class = 'add';
     }else{

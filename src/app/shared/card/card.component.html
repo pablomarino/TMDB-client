@@ -1,9 +1,5 @@
 <div class="card">
-  <span class="material-symbols-outlined" ngClass={{class}} aria-label="Add to favorites icon" (click)="
-  fav=!fav;
-  updateFavorite([id],[name][0],[image][0],[year][0]);
-  ">star</span>
-  <!--<span class="material-symbols-outlined minus" aria-label="Remove from favorites icon" (click)="updateFavorite([id],'','','')">heart_minus</span>-->
+  <span class="material-symbols-outlined" ngClass={{class}} aria-label="Add to favorites icon" (click)="fav=!fav;updateFavorite([id],[name][0],[image][0],[year][0]);">star</span>
   <img class="card-img" src={{image}} alt="Movie poster">
   <div class="card-title"><h3>{{name}}</h3></div>
   <div class="card-year">{{year}}</div>

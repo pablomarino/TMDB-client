@@ -18,6 +18,8 @@
   height: 150px;
   border-radius: 5px 5px 0 0;
   background-color: hsl(320, 95%, 90%);
+  clip-path: polygon(0% 0%, 65% 0, 100% 27%, 100% 100%, 0% 100%);
+
 }
 
 .card-title{
@@ -44,9 +46,9 @@
 }
 .material-symbols-outlined{
   position:absolute;
-  margin-top: 5px;
-  margin-left: 95px;
-  color: white;
+  margin-top: 3px;
+  margin-left: 98px;
+  color: hsl(207, 14%, 15%);
   cursor: pointer;
   font-size: 1.2em;
   font-variation-settings:
@@ -67,14 +69,3 @@
 .add:hover, .remove:hover{
   color: hsl(320, 95%, 80%);
 }
-/*
-.plus{
-
-  visibility: visible;
-}
-
-
-.minus{
-  margin-left: 190px;
-}
-*/

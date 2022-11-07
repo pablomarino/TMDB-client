@@ -13,7 +13,7 @@ export class FavoriteService {
       let data:object={
         name: name,
         poster_path: poster_path,
-        year: year
+        year:year
       }
       localStorage.setItem(String(media_id), JSON.stringify(data));
     }else{
@@ -32,6 +32,7 @@ export class FavoriteService {
       data['year'] = data['year']+ "-01-01";
      _favorites.push(data);
     }
+    console.log(_favorites);
     return _favorites;
   }
 
