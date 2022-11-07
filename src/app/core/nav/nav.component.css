@@ -3,6 +3,7 @@
   background: #fff;
   /*padding: 10px 20px;*/
   display: flex;
+  flex-wrap: wrap;
   justify-content: start;
   align-items: center;
 }
@@ -47,4 +48,18 @@ a{
 
 .search button:hover{
   background: hsl(320, 95%, 58%);
+}
+
+
+@media only screen and (max-width: 500px) {
+  .nav{
+    justify-content: center;
+  }
+  .search{
+    margin: 10px 50px;
+    text-align: center;
+  }
+  a{
+    padding: 10px 10px 0 10px ;
+  }
 }

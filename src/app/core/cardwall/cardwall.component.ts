@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TmdbService } from '../tmdb.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'tmdbc-cardwall',
@@ -10,7 +11,7 @@ export class CardwallComponent implements OnInit {
 
   movieData:string= "";
 
-  constructor(private tmdb:TmdbService) {
+  constructor(private tmdb:TmdbService, private route:ActivatedRoute) {
     const movies = this.tmdb.getMovies();
     movies.subscribe({
       next: (data:string) => {
@@ -24,6 +25,10 @@ export class CardwallComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.route.params.subscribe((params:any) => {
+      this.tmdb.updateMovies(params.searchterm);
+    } );
+
   }
 
 }

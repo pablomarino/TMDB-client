@@ -15,13 +15,6 @@ export class CardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    /*
-    console.log(Object.keys(this.data)[5],Object.values(this.data)[5]);
-    this.name = Object.values(this.data)[5];
-    this.image = "https://www.themoviedb.org/t/p/w220_and_h330_face"+Object.values(this.data)[7];
-    this.year = Object.values(this.data)[11];
-    */
-
     let data = Object(this.data);
 
     if(data['title']) {

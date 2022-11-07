@@ -5,6 +5,8 @@ import { NavComponent } from './nav/nav.component';
 import { CardwallComponent } from './cardwall/cardwall.component';
 import { FooterComponent } from './footer/footer.component';
 import { SharedModule } from '../shared/shared.module';
+import { ErrorComponent } from './error/error.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -13,7 +15,8 @@ import { SharedModule } from '../shared/shared.module';
     HeaderComponent,
     NavComponent,
     CardwallComponent,
-    FooterComponent
+    FooterComponent,
+    ErrorComponent
   ],
   exports:[
     HeaderComponent,
@@ -23,7 +26,8 @@ import { SharedModule } from '../shared/shared.module';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    RouterModule
   ]
 })
 export class CoreModule { }
