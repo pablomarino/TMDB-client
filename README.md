@@ -29,8 +29,8 @@ search/:searchterm -> Shows a search result
 
 #Data
 Both section search, favorites and home rely on cardWall component. They differ in the way they obtain the data.
-Search and favorites use tmdb.service to obtain data from TMDB API to populate the card components while favorites section uses favorite.service. 
-To store favorites the app makes use of localStorage.
+Search and favorites use tmdb.service to obtain data from TMDB API to populate the card components. While favorites section uses favorite.service. 
+To store favorites the app makes use of localStorage. The logic for determining what service to use is stored on cardwall component.
 
 
 ## Development server

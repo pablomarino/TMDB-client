@@ -29,7 +29,7 @@ export class FavoriteService {
       let data:Record<string, any>  = JSON.parse(String(localStorage.getItem(String(key))));
       data['id'] = Number(key);
       data['poster_path'] = "/"+data['poster_path'].split('/').pop();
-      data['year'] = data['year']+ "-01-01";
+      data['release_date'] = data['year']+ "-01-01";
      _favorites.push(data);
     }
     console.log(_favorites);

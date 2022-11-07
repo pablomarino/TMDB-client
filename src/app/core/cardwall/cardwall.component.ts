@@ -29,6 +29,7 @@ export class CardwallComponent implements OnInit {
         }
       })
     }
+    console.log(this.movieData);
   }
 
   ngOnInit(): void {
