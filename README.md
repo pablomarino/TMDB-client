@@ -14,18 +14,18 @@ export const environment = {
 
 ## At a Glance
 **Components**
-- Core/Header -> Title
-- Core/Nav -> Section navigation an search
-- Core/CardWall -> List of cards
-- Shared/Card -> Movie card with Image, title, year and favorite button
-- Core/Error -> 404 Error page
-- Core/Footer  -> Credits
+- Core/Header -> Title.
+- Core/Nav -> Section navigation an search.
+- Core/CardWall -> List of cards.
+- Shared/Card -> Movie card with Image, title, year and favorite button.
+- Core/Error -> 404 Error page.
+- Core/Footer  -> Credits.
 
 **Routing**
 - home -> Shows a list of movies with TMDB's discovery API data.
 - fav -> Shows a list of movies added to favorites.
-- search/:searchterm -> Shows a search result
-- \* -> shows a not found error page
+- search/:searchterm -> Shows search results for the search term.
+- \* -> shows a not found error page.
 
 **Data**
 Both section search, favorites and home rely on cardWall component. They differ in the way they obtain the data.
