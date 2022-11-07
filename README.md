@@ -15,7 +15,7 @@ export const environment = {
 ## At a Glance
 **Components**
 - Core/Header -> Title.
-- Core/Nav -> Section navigation an search.
+- Core/Nav -> Section navigation and search.
 - Core/CardWall -> List of cards.
 - Shared/Card -> Movie card with Image, title, year and favorite button.
 - Core/Error -> 404 Error page.
