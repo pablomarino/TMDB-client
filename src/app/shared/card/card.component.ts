@@ -1,5 +1,6 @@
 import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit, Input } from '@angular/core';
+import { FavoriteService } from '../../services/favorite.service';
 
 @Component({
   selector: 'tmdbc-card',
@@ -9,10 +10,17 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CardComponent implements OnInit {
 
   @Input() data:Object = {};
+
+  id:number = 0;
   name:string = '';
   image:string = '';
   year:string = '';
-  constructor() { }
+  fav:boolean = false;
+
+  class:string = '';
+
+
+  constructor(private favorite:FavoriteService) { }
 
   ngOnInit(): void {
     let data = Object(this.data);
@@ -35,10 +43,26 @@ export class CardComponent implements OnInit {
     } else if(data['release_date']) {
       this.year = data['release_date'].split('-')[0];
     }
+
+    this.id = data['id'];
+
+    this.fav = this.favorite.isFavorite(data['id']);
+
+    if(this.fav){
+      this.class = 'add';
+    }else{
+      this.class = 'remove';
+    }
   }
 
 
-  favMovie(movie: string, isFav: boolean) {
-    console.log(movie, isFav);
+updateFavorite(id: any, name?: string, image?: any, year?: string) {
+    console.log(id, this.fav, name, image, year)
+    if(this.fav){
+      this.class = 'add';
+    }else{
+      this.class = 'remove';
+    }
+    this.favorite.updateFavorite(id, this.fav, name, image, year);
   }
 }

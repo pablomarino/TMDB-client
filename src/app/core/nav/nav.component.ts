@@ -15,7 +15,7 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  searchMovies(searchTerm: string) {
+  gotoSearch(searchTerm: string) {
     this.router.navigate(['search/'+searchTerm]);
   }
 

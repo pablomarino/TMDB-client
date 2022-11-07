@@ -2,7 +2,7 @@
   <a routerLinkActive = "active" routerLink="home">Home</a>
   <a routerLinkActive = "active" routerLink="fav">Favorites</a>
   <div class="search">
-    <input type="text" placeholder="Search for a movie" class="search-input" (keyup.enter)="searchMovies(moviename.value)" #moviename>
-    <button class="search-button" (click)="searchMovies(moviename.value)">Search</button>
+    <input type="text" placeholder="Search for a movie" class="search-input" (keyup.enter)="gotoSearch(moviename.value)" #moviename>
+    <button class="search-button" (click)="gotoSearch(moviename.value)">Search</button>
   </div>
 </nav>

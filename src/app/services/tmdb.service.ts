@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, BehaviorSubject, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
-import { Movie } from './movie.model';
 import { environment } from '../../environments/environment';
 
 @Injectable({
@@ -27,7 +26,6 @@ export class TmdbService {
   }
 
   updateMovies(searchTerm?:string){
-    //console.log(searchTerm, (searchTerm !=='undefined'), (String(searchTerm) !=='undefined'), (searchTerm !== ''));
     if(String(searchTerm) !=='undefined' && searchTerm !== '') {
       this.http.get<any>(this.searchUrl+searchTerm).subscribe({
         next: (data:any) => {
@@ -48,6 +46,8 @@ export class TmdbService {
       });
     }
   }
+
+
   /*
   public getMovies(searchTerm?:string):Observable<any> {
     if(searchTerm !=='undefined') {
