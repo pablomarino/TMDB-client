@@ -1,4 +1,3 @@
-import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit, Input } from '@angular/core';
 import { FavoriteService } from '../../services/favorite.service';
 
@@ -16,7 +15,6 @@ export class CardComponent implements OnInit {
   image:string = '';
   year:string = '';
   fav:boolean = false;
-
   class:string = '';
 
 

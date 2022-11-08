@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class CardwallComponent implements OnInit {
 
-  movieData:string= "";
+  movieData:Array<object>= [];
 
   constructor(private tmdb:TmdbService, private route:ActivatedRoute,private router: Router, private favorite:FavoriteService) {
 
@@ -21,7 +21,7 @@ export class CardwallComponent implements OnInit {
       // Utilizo TmdbService para obtener las peliculas de la api en la seccion Home y Search
       const movies = this.tmdb.getMovies();
       movies.subscribe({
-        next: (data:string) => {
+        next: (data:Array<object>) => {
           this.movieData = data;
         },
         error: (err:any) => {
@@ -29,7 +29,7 @@ export class CardwallComponent implements OnInit {
         }
       })
     }
-    console.log(this.movieData);
+    //console.log(this.movieData);
   }
 
   ngOnInit(): void {
