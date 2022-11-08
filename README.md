@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
+This Mockup Application consumes data from the TMDB API, allows you to list trends, perform searches and maintain a list of favorites. A TMDB API key is required.
+
 ![](https://github.com/pablomarino/tmdb-client/blob/main/src/assets/Animation.gif)
 
 
@@ -31,7 +33,7 @@ export const environment = {
 
 **Data**
 Both section search, favorites and home rely on cardWall component. They differ in the way they obtain the data.
-Search and favorites use tmdb.service to obtain data from TMDB API to populate the card components. While favorites section uses favorite.service. 
+--Search- and --Home-- use **tmdb.service** to obtain data from TMDB API to populate the card components. While --Favorites-- section uses **favorite.service**. 
 To store favorites the app makes use of localStorage. The logic for determining what service to use is stored on cardwall component.
 
 
