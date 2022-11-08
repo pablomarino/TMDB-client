@@ -17,7 +17,9 @@ export const environment = {
 ```
 
 ## At a Glance
+
 **Components**
+
 - Core/Header -> Title.
 - Core/Nav -> Section navigation and search.
 - Core/CardWall -> List of cards.
@@ -26,12 +28,14 @@ export const environment = {
 - Core/Footer  -> Credits.
 
 **Routing**
+
 - home -> Shows a list of movies with TMDB's discovery API data.
 - fav -> Shows a list of movies added to favorites.
 - search/:searchterm -> Shows search results for the search term.
 - \* -> shows a not found error page.
 
 **Data**
+
 Both section search, favorites and home rely on cardWall component. They differ in the way they obtain the data.
 `Search` and `Home` use **tmdb.service** to obtain data from TMDB API to populate the card components. While `Favorites` section uses **favorite.service**. 
 To store favorites the app makes use of localStorage. The logic for determining what service to use is stored on cardwall component.
