@@ -33,7 +33,7 @@ export const environment = {
 
 **Data**
 Both section search, favorites and home rely on cardWall component. They differ in the way they obtain the data.
---Search- and --Home-- use **tmdb.service** to obtain data from TMDB API to populate the card components. While --Favorites-- section uses **favorite.service**. 
+`Search` and `Home` use **tmdb.service** to obtain data from TMDB API to populate the card components. While `Favorites` section uses **favorite.service**. 
 To store favorites the app makes use of localStorage. The logic for determining what service to use is stored on cardwall component.
 
 
